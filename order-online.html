@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Heavenly Macaroons</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		* {
+  		 margin: 0;
+  	}
+  	.nav-container {
+  		position: fixed;
+  		top: 0;
+  		width: 102%;
+  		background-color: white;
+  	}
+  	.nav-container, .logo {
+  		display: flex;
+  		z-index: 1000;
+  	}
+  	.logo > h1 {
+  		margin: 20px;		
+  	}
+  	.logo {
+       flex: 0.50;
+       color: #4C083D;
+  	}
+  	.links{
+  		flex: 0.50;
+  		margin: 20px;
+  	}
+    .route-link{
+    	display: flex;
+    }
+
+  	ul.route-link {
+  		list-style-type: none;
+  		float: right;
+  		width: 100%;
+  		justify-content: space-between;
+  	}
+  	ul.route-link > li {
+  		margin: 5px;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a {
+  		text-decoration: none;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a{
+  		font-size: 25;
+  		transition: 0.5s;
+  		padding: 5px;
+  		border-radius: 10px;
+  	}
+	ul.route-link > li > a:hover{
+		color: white;
+		background-color: maroon;
+		border: 1px solid maroon;
+	}
+	.locations-container {
+		margin-top: 90px;
+		margin-left: 30px;
+	}
+	.flex-container{
+		display: flex;
+	}
+	.right{
+		flex: 50%;
+		width: 50%;
+		height: 158px;
+		background-color: white;
+		margin: 20px;
+	}
+	.left{
+		flex: 50%;
+		width: 50%;
+		height: 158px;
+		background-color: white;
+		margin: 20px;
+	}
+	.other{
+		margin: 30px;
+		margin-right: 50px;
+		justify-content: space-between;
+	}
+	.search{
+		margin: 20px;
+		flex: 50%;
+	}
+	label{
+		font-size: 30px;
+		margin: 20px;
+	}
+	.state{
+		margin: 20px;
+		flex: 50%;
+	}
+	input[type=text] {
+		margin: 15px;
+		padding: 12px;
+	}
+	select#names {
+		margin: 15px;
+		padding: 12px;
+		width: 190px;
+	} 
+	.locate{
+		margin: 31px;
+	}
+	.rectangle {
+		margin: 20px;
+		background-color: whitesmoke;
+		height: 180px;
+		flex: 33.3%;
+		justify-content: space-between;
+		box-sizing: border-box;
+		padding: 30px;
+		border: 2px grey;
+	}
+	.rectangle > a:hover{
+		text-decoration: inherit;
+	}
+	.new {
+		height: 300px;
+	}
+	.icons {
+	  cursor: pointer;
+	}
+	.footer{
+	  	text-align: center;
+	  	padding: 10px;
+	  	margin: 13px;
+	  }
+	  .icons {
+	  	cursor: pointer;
+	  }
+	  .active {
+	  	color: white;
+		background-color: maroon;
+		border: 1px solid maroon;
+	  	cursor: pointer;
+	  }
+	</style>
+</head>
+<body>
+	<div class="main-container">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html"><img width="75px" height="75px" src="pic1.jpg"></a>
+				<h1>THE HEAVENLY MACAROONS</h1>
+			</div>
+			<div class="links">
+				<ul class="route-link">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="career.html">Career</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="About.html">About Us</a></li>
+					<li><a href="order-online.html" class="active">Order Online</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="locations-container">
+			<div class="flex-container other">
+		   		<div class="right">
+		   			<div class="flex-container">
+		   				<i class="fa fa-map-marker" style="font-size: 48px; color: pink;padding: 5px; padding-top: 20px;"></i>
+						<h1 style="padding: 12px; color: #4F5051; font-size: 40px;">Select a location for pick-up or delivery</h1>
+					</div>
+					<h3 style="margin-left: 29px; color: #4b535bd6; font-size: 21px;">Participating locations listed below</h3>	
+		   		</div>
+		   		<div class="left">
+		   			<div class="flex-container">
+		   				<div class="search">
+		   					<label for="search">Search</label>
+							<input type="text" name="search">
+		   				</div>
+		   				<div class="state">
+		   					<label for="State">State</label>
+		   					<select id="names" name="State">
+							<option value="ALL">ALL</option>
+    						<option value="AL">AL</option>
+    						<option value="CA">CA</option>
+    						<option value="FL">FL</option>
+    						<option value="GA">GA</option>
+							<option value="IL">IL</option>
+    						<option value="MI">MI</option>
+							</select>
+		   				</div>
+		   			</div>	
+		   		</div>
+			</div>		
+		</div>
+		<div class="locate">
+			<hr>
+			<div class="flex-container">
+				<div class="rectangle">
+					<h2 style="font-size: 30px;">AL</h2>
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Huntsville</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">315 The Bridge Street, Huntsville, 35806</p>
+				</div>
+				<div class="rectangle">
+					<h2 style="font-size: 30px;">GA</h2>
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Savannah</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">204 West Broughton Street, Savannah, 31401</p>
+				</div>
+				<div class="rectangle">
+					<h2 style="font-size: 30px;">PA</h2>
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Doylestown</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">4 W. Oakland Ave., Doylestown, 18901</p>
+				</div>
+			</div>
+			<div class="flex-container">
+				<div class="rectangle new">
+					<h2 style="font-size: 30px;">CA</h2>
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Del Mar, One Paseo Mall</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">3722 Paseo Place, San Diego, 92130</p>
+
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Laguna Beach</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">184 S Coast Hwy, Laguna Beach, 92651</p>
+
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Santa Monica</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">1301 Montana Avenue, Santa Monica, 90403</p>
+				</div>
+				<div class="rectangle new">
+					<h2 style="font-size: 30px;">IL</h2>
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Chicago</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">543 Oakbrook Center, Oak Brook, 60523</p>
+
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Outlets of Chicago</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">5220 Fashion Outlets Way, Rosemont, 60018</p>
+
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Woodfield Mall</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">5 Woodfield Mall, Schaumburg, 60173</p>
+				</div>
+				<div class="rectangle new">
+					<h2 style="font-size: 30px;">TX</h2>
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Cypress</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">10611 Fry Road, Cypress, 77433</p>
+
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Denton,Golden Mall</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">2201 Interstate, Denton, 76205</p>
+
+					<i class="fa fa-angle-right" style="font-size: 26px; color: #DE3163; padding: 7px;"></i>
+					<a href="" style="text-decoration: none; color: #DE3163; font-size: 26px;">Vintage Park</a>
+					<br>
+					<p style="font-size: 15px; color: #808080;">130 Vintage Park Blvd G, Houston, 77070</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p style="color: grey; text-align: center;"><i class="fa fa-copyright"></i>Copyright 2022 Le Macaron. ALL RIGHTS RESERVED. Digital Marketing by 9thRoot.</p>
+			<br>
+			<div class="icons">
+			<i class="fa fa-facebook-square" style="font-size: 32px; padding: 12px"></i>
+        	<i class="fa fa-instagram" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-twitter" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-linkedin" style="font-size:32px; padding: 12px"></i>
+        	</div>
+		</div>
+	</div>
+</body>
+</html>

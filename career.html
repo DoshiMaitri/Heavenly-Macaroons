@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Heavenly Macaroons</title>
+	<link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		* {
+  		 margin: 0;
+  	}
+  	.nav-container {
+  		position: fixed;
+  		top: 0;
+  		width: 102%;
+  		background-color: white;
+  	}
+  	.nav-container, .logo {
+  		display: flex;
+  		z-index: 1000;
+  	}
+  	.logo > h1 {
+  		margin: 20px;		
+  	}
+  	.logo {
+       flex: 0.50;
+       color: #4C083D;
+  	}
+  	.links{
+  		flex: 0.50;
+  		margin: 20px;
+  	}
+    .route-link{
+    	display: flex;
+    }
+
+  	ul.route-link {
+  		list-style-type: none;
+  		float: right;
+  		width: 100%;
+  		justify-content: space-between;
+  	}
+  	ul.route-link > li {
+  		margin: 5px;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a {
+  		text-decoration: none;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a{
+  		font-size: 25;
+  		transition: 0.5s;
+  		padding: 5px;
+  		border-radius: 10px;
+  	}
+	ul.route-link > li > a:hover{
+		color: white;
+		background-color: maroon;
+		border: 1px solid maroon;
+	}
+	.body-container{
+      	min-height: 200px;
+  	  	width: 100%;
+  	  	background-image: url("back9.jpg");
+  	  	background-position: center;
+  	  	background-size: cover;
+  	  	background-position: relative;
+  	}
+  	.flex-container {
+		display: flex;
+	}
+  	.info-container{
+  		margin: 60px;
+  	}
+  	.hiring{
+  		justify-content: space-around;
+  		background-color: white;
+  		width: 100%;
+  		height: 600px;
+  		margin: 20px;
+	}
+	input[type=text] {
+		padding: 12px;
+		font-size: 18px;
+		width: 435px;
+		height: 20px;
+		margin: 8px;
+	}
+	.hiring > form{
+		margin: 30px;
+	}
+	.hiring > form > button:hover {
+		transform: scale(1.2);
+		
+	}
+	textarea{
+	  	resize: none;
+	}  
+	textarea::placeholder{
+		font-size: 18px;
+	}	
+	input[type=text], select, textarea{
+		border: 1px solid #ccc;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 10px;
+  	}
+  	.footer{
+	  	text-align: center;
+	  	padding: 10px;
+	  	margin: 13px;
+	 }
+	.icons {
+	  	cursor: pointer;
+	}
+	.active {
+	  	color: white;
+		background-color: maroon;
+		border: 1px solid maroon;
+	  	cursor: pointer;
+	  }
+	</style>
+</head>
+<body>
+	<div class="main-container">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html"><img width="75px" height="75px" src="pic1.jpg"></a>
+				<h1>THE HEAVENLY MACAROONS</h1>
+			</div>
+			<div class="links">
+				<ul class="route-link">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="career.html" class="active">Career</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="About.html">About Us</a></li>
+					<li><a href="order-online.html">Order Online</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-container"></div>
+		<div class="info-container">
+			<hr>
+			<div class="flex-container">
+				<div class="hiring">
+					<p style="font-size:20px; color: #6E686C; padding: 10px;">Please keep in mind that there are not always positions available, so if you apply and we are not currently hiring, we will keep your application on file until the time is right.</p>
+					<br>
+					<img src="cafe.jpg" height="380px" width="99%" border="1px grey" style="padding: 3px;">
+				</div>
+				<div class="hiring" style="padding:15px;">
+					<h1 style="font-size: 30px; color: #615A5F;">Questions & Inquiries</h1>
+					<br>
+					<p style="font-size:20px; color: #6E686C;">Please complete the short form below with questions or to inquire about our open positions</p>
+					<form action="" method="GET">
+						<input type="text" name="Full Name" placeholder="Full Name">
+						<input type="text" name="Phone" placeholder="Phones">
+						<input type="text" name="Email" placeholder="Email">
+						<input type="text" name="State" placeholder="State">
+						<input type="text" name="Location" placeholder="Location...">
+						<textarea rows="6" cols="60" name="message" placeholder="&nbsp;Provide a brief Summary of your experience..."></textarea>
+						<button type="submit" style="border-style: none; margin: 15px; padding: 8px; background-color: #DE3163; cursor: pointer; border-radius: 7px; font-size: 20px;">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p style="color: grey; text-align: center;"><i class="fa fa-copyright"></i>Copyright 2022 Le Macaron. ALL RIGHTS RESERVED. Digital Marketing by 9thRoot.</p>
+			<br>
+			<div class="icons">
+        	<i class="fa fa-facebook-square" style="font-size: 32px; padding: 12px"></i>
+        	<i class="fa fa-instagram" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-twitter" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-linkedin" style="font-size:32px; padding: 12px"></i>
+        </div>
+		</div>
+	</div>
+</body>
+</html>

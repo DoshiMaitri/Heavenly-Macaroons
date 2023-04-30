@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Heavenly Macrons</title>
+	<link rel="stylesheet"
+          href=
+	"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	* {
+  		 margin: 0;
+  	}
+  	.nav-container {
+  		position: fixed;
+  		top: 0;
+  		width: 102%;
+  		background-color: white;
+  	}
+  	.nav-container, .logo {
+  		display: flex;
+  		z-index: 1000;
+  	}
+  	.logo > h1 {
+  		margin: 20px;		
+  	}
+  	.logo {
+       flex: 0.50;
+       color: #4C083D;
+  	}
+  	.links{
+  		flex: 0.50;
+  		margin: 20px;
+  	}
+    .route-link{
+    	display: flex;
+    }
+
+  	ul.route-link {
+  		list-style-type: none;
+  		float: right;
+  		width: 100%;
+  		justify-content: space-between;
+  	}
+  	ul.route-link > li {
+  		margin: 5px;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a {
+  		text-decoration: none;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a{
+  		font-size: 25;
+  		transition: 0.5s;
+  		padding: 5px;
+  		border-radius: 10px;
+  	}
+	ul.route-link > li > a:hover{
+		color: white;
+		background-color: maroon;
+		border: 1px solid maroon;
+	}
+	.body-container{
+      	min-height: 250px;
+  	  	width: 100%;
+  	  	background-image: url("back3.jpg");
+  	  	background-position: center;
+  	  	background-size: cover;
+  	  	background-position: relative;
+  	}
+  	.flex-container {
+	  	display: flex;
+	}
+	.info{
+		flex: 50% 50%;
+	}
+	.info > h1 {
+		color: #F38EC8;
+		font-size: 50px;
+	}
+	.info > h2 {
+		color: #895C76;
+		font-size: 25px;
+	}
+	.info > p {
+		color: #6D686B;
+		font-size: 20px;
+	}
+	.other{
+		margin: 30px;
+	}
+	.new > h1 {
+		color: #F38EC8;
+		margin-top: 50px;
+		margin-right: 20px;
+		margin-bottom: 30px;
+		margin-left: 10px;
+		font-size: 35px;
+	}
+	.new > p {
+		color: #6D686B;
+		font-size: 20px;
+	}
+	.info-wrap{
+		margin: 30px;
+	}
+	.knowmore{
+		background-image: url("about-us-background.jpg");
+		height:650px;
+		width: 1263px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.rectangle{
+		height: 500px;
+		width: 500px;
+		margin: 12vh 7vh 11vh 9vh;
+		background-color: floralwhite;
+	}
+	.rectangle > button{
+		padding: 15px; 
+		background-color: #ECC4CD; 
+		border-radius: 15px; 
+		cursor: pointer; 
+		border-style: none; 
+		margin-top: 10px; 
+		margin-left: 85px; 
+		font-size: 25px;
+		transition: 0.5s;
+	}
+	.rectangle > button > a {
+		text-decoration: none; 
+		color: white;
+	}
+	.rectangle > button:hover{
+		border-style: solid;
+		border-width: thick;
+		border-color: #E6BBD5;
+		transform: scale(1.2);
+	}
+	.rectangle:hover{
+		box-shadow: 1px 2px 26px -6px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 1px 2px 26px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 2px 26px -6px rgba(0,0,0,0.75);
+	}
+	.box{
+		width: 850px;
+		height: 600px;
+		margin: 20vh 10vh 6vh 27vh ;
+		background-color: #FFD1FE;
+		padding: 50px;
+		border-radius: 10px;
+	}
+	input[type=text], select, textarea {
+	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0px;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 10px;
+  	box-sizing: border-box;
+  }
+  	input[type=submit] {
+  	width: 100%;
+  	background-color: #4CAF50;
+  	color: white;
+  	font-size: 25px;
+  	padding: 10px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	margin-top: 20px;
+	}
+	input[type=submit]:hover {
+  	background-color: #45a049;
+	}
+	 textarea{
+	  	resize: none;
+	}
+	label{
+	font-size: 24px;
+	}
+	.footer{
+	text-align: center;
+	padding: 10px;
+	margin: 13px;
+	}
+	.icons {
+	cursor: pointer;
+	}
+	.active {
+	color: white;
+	background-color: maroon;
+	border: 1px solid maroon;
+	cursor: pointer;
+	}
+	</style>
+</head>
+<body>
+	<div class="main-container">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html"><img width="75px" height="75px" src="pic1.jpg"></a>
+				<h1>THE HEAVENLY MACAROONS</h1>
+			</div>
+			<div class="links">
+				<ul class="route-link">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="career.html">Career</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="About.html" class="active">About Us</a></li>
+					<li><a href="order-online.html">Order Online</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-container"></div>
+		<div class="info-container">
+			<div class="flex-container">
+				<div class="info other">
+					<h1><b>About Us</b></h1>
+					<br>
+					<h2>The cool story behind our company's founding and what make us unique.</h2>
+					<br>
+					<hr>
+					<br>
+					<p>Founders, Rosalie Guillem, who was living in Florida and her daughter, Audrey Guillem-Saba, living in France, had a dream ? to share delectable French macarons with the world and to reunite their family. The family, originally hailing from France, were surprised to find that the American take on the "macaron" was often simply sugar spun into a cookie shape or confused with the familiar coconut cookie "macaroon". They knew that with a little consumer education, and by treating the American palate to true French macarons, they could bring a taste and texture sensation to the marketplace.</p>
+					<br>
+					<p>Founders, Rosalie Guillem, who was living in Florida and her daughter, Audrey Guillem-Saba, living in France, had a dream ? to share delectable French macarons with the world and to reunite their family. The family, originally hailing from France, were surprised to find that the American take on the "macaron" was often simply sugar spun into a cookie shape or confused with the familiar coconut cookie "macaroon". They knew that with a little consumer education, and by treating the American palate to true French macarons, they could bring a taste and texture sensation to the marketplace.</p>
+					<br>
+					<p>Our niche concept is unique, with very limited competition. Today's consumers are eager to engage with their food in new, creative ways. They want flavor and texture, quality, and presentation; they are more health conscience. Each of our signature pastries is handcrafted by our team of French chefs at our The Heavenly Macaroons® commissary.</p>
+				</div>
+				<div class="info">
+					<img src="img3.jpg" width="550px" height="400px" style="margin-top: 100px; margin-right: 60px; margin-left: 20px; margin-bottom: 30px;">
+					<p style="margin-right: 60px; margin-left: 30px; margin-top: 10px; margin-bottom: 5px;">Our true French macaron is made with the finest gluten-free ingredients, no preservatives and is about 80 calories each. Beyond the signature macarons, our menu includes gourmet chocolates, French gelato, classic French pastries, European style beverages and homemade candies. Some locations may also serve a variety of wine and sparkling wine.</p>
+					<br>
+					<p style="margin-right: 60px; margin-left: 30px; margin-top: 5px; margin-bottom: 2px;">Our French pâtisseries are a modern European design with no on-site baking providing refined operations so minimal staffing is required. Our franchisees leverage streamlined locations which provides time to focus on excellence in customer service and opportunities for additional avenues of revenue.</p>
+				</div>
+			</div>
+			<div class="info-wrap">
+			  <div class="flex-container">
+				<div class="more-info">
+					<img src="store.jpg" width="600px" height="400px" style="margin-top: 100px; margin-right: 40px; margin-left: 20px; margin-bottom: 30px;">
+				</div>
+				<div class="more-info new">
+					<h1>Macaroon Oui! Macaron Non!</h1>
+					<p>The macaron, perfected in France, has a long history dating back centuries in Europe. Macarons look like small, round shells and are created from ground almonds and soft meringue. These sweet, tiny delicacies fit right into the palm of your hand. They are lightly crisp on the outside and smooth and creamy in the center, filled with ganache (chocolate), rich cream, homemade fruit jams or other quality ingredients. Our macarons are made with natural ingredients and no preservatives. Not to be confused with macaroons, the more familiar, American coconut cookie. Authentic French macarons have gained a new level of interest in the United States and around the world. Rich in flavor and origin, The Heavenly Macarons® revolutionizes the retail bakery sector with an elegant concept characterized by luxury, yet affordability, providing "little luxuries that make people smile"?. No other pastry shop, bakery or café offers the same ambience, variety, quality, convenience - and simplicity of operations - that The Heavenly Macarons® does!</p>
+				</div>
+			  </div>	
+			</div>
+		</div>
+		<div class="knowmore">
+			<div class="flex-container">
+				<div class="rectangle">
+					<img src="back4.jpg" height="240" width="325">
+					<br><br><br>
+					<h1 style="font-size: 30px; text-align: center; color:grey;">Our</h1>
+					<h1 style="font-size: 35px; text-align: center; color: #636163;">Products</h1>
+					<br><br>
+					<button>
+						<a href="product.html">Learn More!</a>
+					</button>
+				</div>
+				<div class="rectangle">
+					<img src="back5.jpg" height="240" width="325">
+					<br><br><br>
+					<h1 style="font-size: 30px; text-align: center; color:grey;">Pre</h1>
+					<h1 style="font-size: 35px; text-align: center; color: #636163;">Order Online</h1>
+					<br><br>
+					<button>
+						<a href="order-online.html">Learn More!</a>
+					</button>
+				</div>
+				<div class="rectangle">
+					<img src="back7.jpg" height="240" width="325">
+					<br><br><br>
+					<h1 style="font-size: 30px; text-align: center; color:grey;">Search</h1>
+					<h1 style="font-size: 35px; text-align: center; color: #636163;">Locations</h1>
+					<br><br>
+					<button>
+						<a href="order-online.html">Learn More!</a>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="contact-us">
+			<div class="box">
+				<h1 style="margin-bottom: 20px; color: maroon; font-size: 30px;">CONTACT US</h1>
+				<div class="form">
+					<form action="" method="GET">
+						<label for="name">Name</label>
+    				<input type="text" id="name" name="name" placeholder="Your name..">
+    				<label for="number">Number</label>
+    				<input type="text" id="number" name="number"
+    				placeholder="Your number..">
+    				<label for="email">Email</label>
+    				<input type="text" id="email" name="email" placeholder="Your email id..">
+    				<label for="Location">Location</label>
+    				<input type="text" name="location" id="location" placeholder="Your location..">
+    				<label for="message">Message</label>    			
+    				<textarea rows="4" cols="50" name="message" placeholder="Type your message here.."></textarea>
+    				<input type="submit" value="Submit">
+					</form>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<p style="color: grey; text-align: center;"><i class="fa fa-copyright"></i>Copyright 2022 Le Macaron. ALL RIGHTS RESERVED. Digital Marketing by 9thRoot.</p>
+			<br>
+			<div class="icons">
+			<i class="fa fa-facebook-square" style="font-size: 32px; padding: 12px"></i>
+        	<i class="fa fa-instagram" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-twitter" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-linkedin" style="font-size:32px; padding: 12px"></i>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

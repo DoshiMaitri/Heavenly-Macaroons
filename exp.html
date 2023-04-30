@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.container {
+			width: 100%;
+		}
+		.myslides {
+			display: flex;
+		}
+		.carousel {
+			flex: 20%;
+			margin: 5px;
+			border: 1px solid darkred;
+		}
+		/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -157px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: grey;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="myslides">
+			<div class="carousel">
+				<img src="Red-Velvet.png" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="lemon-cream.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="mangojam.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="darkchoco.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="raspberry.jpg" height="200px" width="240px">
+			</div>
+		</div>
+		<div class="myslides">
+			<div class="carousel">
+				<img src="cassis-jam.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="coconut.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="chocolate-praline.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="colombian-coffee.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="mint-white-chocalate.jpg" height="200px" width="240px">
+			</div>
+		</div>
+		<div class="myslides">
+			<div class="carousel">
+				<img src="large-birthday-cake.png" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="bubblegum.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="black-vanilla-madagascar.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="belgian-chocolate.jpg" height="200px" width="240px">
+			</div>
+			<div class="carousel">
+				<img src="basil-white-chocolate.jpg" height="200px" width="240px">
+			</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+</body>
+</html>

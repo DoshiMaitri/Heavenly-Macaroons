@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Heavenly Macrons</title>
+	<link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  	* {
+  		 margin: 0;
+  	}
+  	.nav-container {
+  		position: fixed;
+  		top: 0;
+  		width: 102%;
+  		background-color: white;
+  	}
+  	.nav-container, .logo {
+  		display: flex;
+  		z-index: 1000;
+  	}
+  	.logo > h1 {
+  		margin: 20px;		
+  	}
+  	.logo {
+       flex: 0.50;
+       color: #4C083D;
+  	}
+  	.links{
+  		flex: 0.50;
+  		margin: 20px;
+  	}
+    .route-link{
+    	display: flex;
+    }
+
+  	ul.route-link {
+  		list-style-type: none;
+  		float: right;
+  		width: 100%;
+  		justify-content: space-between;
+  	}
+  	ul.route-link > li {
+  		margin: 5px;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a {
+  		text-decoration: none;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a{
+  		font-size: 25;
+  		transition: 0.5s;
+  		padding: 5px;
+  		border-radius: 10px;
+  	}
+		ul.route-link > li > a:hover{
+			color: white;
+			background-color: maroon;
+			border: 1px solid maroon;
+
+		}
+  	.body-container{
+      min-height: 550px;
+  		width: 100%;
+  		background-image: url("back10.jpg");
+  		background-position: center;
+  		background-size: cover;
+  		background-position: relative;
+  	}
+		.center{
+		  position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Vujahday Script', cursive;
+      font-size: 56px;
+      display: block;
+      color: ghostwhite;
+		}
+		.button {
+		  display: inline-block; 
+		  text-decoration: none;
+		  color: #fff;
+		  border: 1px solid #fff;
+		  padding: 12px 34px;
+		  background: transparent;
+		  position: relative;	
+		  cursor: pointer;
+		  left: 105px;
+		}
+		.button:hover {
+			border: 1px solid #f44336;
+			background: #f44336;
+			transition: 1s;
+		}
+		.flex-container {
+			display: flex;
+		}
+		.square {
+			justify-content: space-between;
+			width: 100%;
+			margin: 35px 25px 35px 35px;
+			height: 280px;
+			padding: 30px;
+			background-color: #FFF6F8;
+		}
+		.square > button {
+			padding: 10px; 
+			background-color: #ECC4CD ;
+			border-radius: 10px;
+			cursor: pointer; 
+			border-style: none;
+			margin-top: 7px;
+			transition: 0.2s;
+		}
+		.square > button:hover {
+			transform: scale(1.2);
+		}
+		.frame {
+  		height: 70vh;
+  		width: 100vw;
+  		margin: 10vh 5vw;
+  		background-color: #eee;
+  		background-position: center;
+  		background-size: cover;
+  		flex: 75%;
+  		margin: 10vh 7vw 10vh 23vw;
+  
+  		animation: image 4s infinite alternate;
+}
+ 	@keyframes image {
+  	0% {
+    	background-image: url('img3.jpg');
+  }	
+  	30%{
+    	background-image: url('img6.jpg');
+  }
+  	60% {
+    background-image: url('img4.jpg');
+  }
+  	100% {
+    background-image: url('img5.jpg');
+  }
+}
+	.other {
+		position: relative;
+		background-color: #FFD1FE;
+	}
+	.imginfo {
+  	justify-content: space-between;
+			width: 25%;
+			height: 280px;
+			padding: 30px;
+			background-color: #fff;
+			flex: 25%;
+/*			margin: 10vh 5vw 10vh 2.5vw;
+*/			vertical-align: middle;
+			margin-left: 65px;
+			margin-bottom: 20px;
+		  position: absolute;
+		  top: 50%;
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+	}
+	.scrol{
+		background-color: #FBEBF6;
+		padding: 20px;
+		margin: 9vh ;
+	}
+	.knowmore{
+		background-image: url("knowmorebackground.jpg");
+		height:550px ;
+		width: 1263px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	.rectangle{
+		height: 350px;
+		width: 350px;
+		background-color: yellowgreen;
+		padding: 30px;
+		margin: 11vh 8vh 11vh 20vh;
+		background-color: white;	
+	}
+	.rectangle:hover{
+		box-shadow: 1px 2px 26px -6px rgba(0,0,0,0.75);
+		-webkit-box-shadow: 1px 2px 26px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 2px 26px -6px rgba(0,0,0,0.75);
+	}
+	.rectangle > button:hover {
+		transform: scale(1.2);
+	}
+	.box{
+		width: 850px;
+		height: 600px;
+		margin: 20vh 10vh 6vh 27vh ;
+		background-color: #FFD1FE;
+		padding: 50px;
+		border-radius: 10px;
+	}
+		input[type=text], select, textarea {
+	 	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0px;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 10px;
+  	box-sizing: border-box;
+  }
+  	input[type=submit] {
+  	width: 100%;
+  	background-color: #4CAF50;
+  	color: white;
+  	font-size: 25px;
+  	padding: 10px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	margin-top: 20px;
+	}
+		input[type=submit]:hover {
+  	background-color: #45a049;
+	}
+	  textarea{
+	  	resize: none;
+	  }
+	  label{
+	  	font-size: 24px;
+	  }
+	  .footer{
+	  	text-align: center;
+	  	padding: 10px;
+	  	margin: 13px;
+	  }
+	  .icons {
+	  	cursor: pointer;
+	  }
+	  .active {
+	  	color: white;
+			background-color: maroon;
+			border: 1px solid maroon;
+	  	cursor: pointer;
+	  }
+  </style>
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="main-container">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html"><img width="75px" height="75px" src="pic1.jpg"></a>
+				<h1>THE HEAVENLY MACAROONS</h1>
+			</div>
+			<div class="links">
+				<ul class="route-link">
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="product.html">Products</a></li>
+					<li><a href="career.html">Career</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="About.html">About Us</a></li>
+					<li><a href="order-online.html">Order Online</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-container">
+			<div class="text">
+			  <p class="center">Simple, Elegant French Patisseries, Authentic French Macaroons<br>
+			  <a href="order-online.html" class="button">Order Online</a>
+			  </p>
+		  </div>
+		</div>
+		<div class="info-container">
+			<div class="flex-container"> 
+				<div class="square">
+					<h1 style="text-align: center; font-size: 30px; color: grey;">About Us</h1>
+				     <p style="font-size: 22px; color: #746D71;">The macaroon is considered to be the jewel of French pastries in Europe.<br> Our macaroons will delight ... First bite is a surprise.<br> Second bite is the flavor. Third bite is the pleasure...<br> all adding up to create a mouthful of heaven!</p>
+			   <button style=""><a href="About.html"style="text-decoration: none;">Read More!</a>
+				 </button>
+				</div>
+				<div class="square">
+				 	 <img src="macaron1.jpg" alt="different types of macaroons" width="100%" height="100%px">
+				</div>
+				<div class="square">
+				 	<img src="macaron2.jpg" alt="Macarons on the dish." width="100%" height="100%">
+				</div>
+			</div>
+		</div>	
+		<div class="products">
+			 <div class="flex-container other">
+			 		<div class="frame"></div>
+			 		<div class="imginfo">
+			 			<h1 style="font-size: 30px; color: grey;">&ensp;Our Products</h1>
+			 			<p style="font-size: 20px; color: #746D71;">At THE HEAVENLY MACAROONS our exceptional products speak for themselves. Our true French macarons are the perfect delicacy... Macarons are a symbol of luxury and that’s why they also make a refined gift for someone special in your life and a wonderful treat for you to indulge in.They can simply be described as: Little luxuries that make people smile.</p>
+			 		</div>			 
+			 </div>
+		</div>
+		<div class="items-container">
+			<div class="scrol">
+				<marquee behavior="scroll" direction="right"scrollamount="30">
+ 				
+ 				<img src="belgian-chocolate.jpg" width="200" height="200" alt="macaron">
+ 				<img src="bubblegum.jpg" width="200" height="200" alt="macaron">
+ 				<img src="coconut.jpg" width="200" height="200" alt="macaron">
+ 				<img src="darkchoco.jpg" width="200" height="200" alt="macaron">
+ 				<img src="lavenderwhitechoco.jpg" width="200" height="200" alt="macaron">
+ 				<img src="mangojam.jpg" width="200" height="200" alt="macaron">
+ 				<img src="sicilian-pistachio.jpg" width="200" height="200" alt="macaron">
+ 				<img src="strawberry-keylime.jpg" width="200" height="200" alt="macaron">
+ 				<img src="lemon-cream.jpg" width="200" height="200" alt="macaron">
+ 				
+ 				</marquee>
+			</div>
+			<div class="knowmore">
+				<div class="flex-container">
+					<div class="rectangle">
+						<h1 style="font-size: 28px; color: grey;">Search</h1>
+						<h1 style="font-size: 37px; color:#636163">Locations</h1>
+						<br><br>
+						<p style="font-size: 25px; color: #746D71;">Visit one of our pastry shops and enjoy an authentic French Pastry Café experience featuring Le Macaroon, America's newest dessert darling ... Magnifique!</p>
+						<br>
+						<button style="padding: 10px; background-color: #ECC4CD ; border-radius: 10px; cursor: pointer; border-style: none; margin-top: 7px;">
+							<a href="order-online.html" style="text-decoration: none;">Read More!</a>
+						</button>
+					</div>
+					<div class="rectangle">
+						<h1 style="font-size: 28px; color: grey;">For your </h1>
+						<h1 style="font-size: 37px; color:#636163">Catering</h1>
+						<br><br>
+						<p style="font-size: 25px; color: #746D71;" >Macaroons are the perfect delicacy to bring an elegant, timeless touch to your special event. You're sure to surprise your guests with these irresistible treats.</p>
+						<br>
+						<button style="padding:10px; background-color: #ECC4CD ; border-radius: 10px; cursor: pointer; border-style: none; margin-top: 7px;">
+							<a href="product.html" style="text-decoration: none;">Read More!</a>
+						</button>
+					</div>
+				</div> 		
+			</div>
+		</div>
+		<div class="contact-us">
+			<div class="box">
+				<h1 style="margin-bottom: 20px; color: maroon; font-size: 30px;">CONTACT US</h1>
+				<div class="form">
+					<form action="" method="GET">
+						<label for="name">Name</label>
+    				<input type="text" id="name" name="name" placeholder="Your name..">
+    				<label for="number">Number</label>
+    				<input type="text" id="number" name="number"
+    				placeholder="Your number..">
+    				<label for="email">Email</label>
+    				<input type="text" id="email" name="email" placeholder="Your email id..">
+    				<label for="Location">Location</label>
+    				<input type="text" name="location" id="location" placeholder="Your location..">
+    				<label for="message">Message</label>    			
+    				<textarea rows="4" cols="50" name="message" placeholder="Type your message here.."></textarea>
+    				<input type="submit" value="Submit">
+					</form>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<div class="icons">
+				<p style="color: grey; text-align: center;"><i class="fa fa-copyright"></i>Copyright 2022 Le Macaron. ALL RIGHTS RESERVED. Digital Marketing by 9thRoot.</p>
+			<br>
+        	<i class="fa fa-facebook-square" style="font-size: 32px; padding: 12px"></i>
+        	<i class="fa fa-instagram" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-twitter" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-linkedin" style="font-size:32px; padding: 12px"></i>
+      </div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Heavenly Macrons</title>
+	<link rel="stylesheet"
+          href=
+	"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	* {
+  		 margin: 0;
+  	}
+  	.nav-container {
+  		position: fixed;
+  		top: 0;
+  		width: 102%;
+  		background-color: white;
+  	}
+  	.nav-container, .logo {
+  		display: flex;
+  		z-index: 1000;
+  	}
+  	.logo > h1 {
+  		margin: 20px;		
+  	}
+  	.logo {
+       flex: 0.50;
+       color: #4C083D;
+  	}
+  	.links{
+  		flex: 0.50;
+  		margin: 20px;
+  	}
+    .route-link{
+    	display: flex;
+    }
+
+  	ul.route-link {
+  		list-style-type: none;
+  		float: right;
+  		width: 100%;
+  		justify-content: space-between;
+  	}
+  	ul.route-link > li {
+  		margin: 5px;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a {
+  		text-decoration: none;
+  		font-size: 20px;
+  	}
+  	ul.route-link > li > a{
+  		font-size: 25;
+  		transition: 0.5s;
+  		padding: 5px;
+  		border-radius: 10px;
+  	}
+	ul.route-link > li > a:hover{
+		color: white;
+		background-color: maroon;
+		border: 1px solid maroon;
+ 	}
+ 	.body-container{
+      	min-height: 200px;
+  	  	width: 100%;
+  	  	background-image: url("proimg.jpg");
+  	  	background-position: center;
+  	  	background-size: cover;
+  	  	background-position: relative;
+  	}
+  	.flex-container {
+	  	display: flex;
+	  	background-color: white;
+	}
+	.image{
+		width: 130px;
+		height: 450px;
+		margin: 10vh 2vh 10vh 10vh;
+		background-color: pink;
+		background-position: center;
+		flex: 65%;
+
+		animation: image 8s infinite alternate;
+	}
+
+	@keyframes image {
+  	0% {
+    background-image: url('img3.jpg');
+    background-size: 870px;
+    background-repeat: no-repeat;
+  }	
+  	35%{
+    background-image: url('img6.jpg');
+    background-size: 870px;
+    background-repeat: no-repeat;
+  }
+  	70% {
+    background-image: url('img4.jpg');
+    background-size: 870px;
+    background-repeat: no-repeat;
+  }
+  	100% {
+    background-image: url('img8.jpg');
+    background-size: 870px;
+    background-repeat: no-repeat;
+  }
+}
+	.img-info{
+		margin-top: 8vh;
+		margin-bottom: 10vh;
+		margin-left: 2vh;
+		margin-right: 6vh;
+		height: 300px;
+		width: 300px;
+		padding: 5px;
+		flex: 35%;
+	}
+	.pics > img {
+		margin: 10px;
+		text-align: center;
+		line-height: 100px;
+	}
+	.pics > h3 {
+		text-align: center;
+		color: #986984;
+	}
+	.box{
+		width: 850px;
+		height: 600px;
+		margin: 20vh 10vh 6vh 27vh ;
+		background-color: #FFD1FE;
+		padding: 50px;
+		border-radius: 10px;
+	}
+	input[type=text], select, textarea {
+	 	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0px;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 10px;
+  	box-sizing: border-box;
+  }
+  	input[type=submit] {
+  	width: 100%;
+  	background-color: #4CAF50;
+  	color: white;
+  	font-size: 25px;
+  	padding: 10px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+  	margin-top: 20px;
+	}
+		input[type=submit]:hover {
+  	background-color: #45a049;
+	}
+	textarea{
+	  	resize: none;
+	  }
+	  label{
+	  	font-size: 24px;
+	  }
+	  .footer{
+	  	text-align: center;
+	  	padding: 10px;
+	  	margin: 13px;
+	  }
+	  .icons {
+	  	cursor: pointer;
+	  }
+	  .active {
+	  	color: white;
+			background-color: maroon;
+			border: 1px solid maroon;
+	  	cursor: pointer;
+	  }
+	</style>
+</head>
+<body>
+	<div class="main-container">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html"><img width="75px" height="75px" src="pic1.jpg"></a>
+				<h1>THE HEAVENLY MACAROONS</h1>
+			</div>
+			<div class="links">
+				<ul class="route-link">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="product.html" class="active">Products</a></li>
+					<li><a href="career.html">Career</a></li>
+					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="About.html">About Us</a></li>
+					<li><a href="order-online.html">Order Online</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="body-container"></div>
+		<div class="info-container">
+			<div class="extra-info">
+				<div class="flex-container">
+					<div class="image"></div>
+					<div class="img-info">
+						<h1 style="color: #F28AF2; padding: 3px;">OUR PRODUCTS</h1>
+						<p style="font-size: 20px;
+						color: #676067;">Handmade at our very own confectionary, our macarons make delightful desserts for festive parties or a fun treat for yourself and a friend. At around 80 calories each and made with no gluten containing ingredients, these sweet treats are great for sharing and offering as a gift for any occasion.</p>
+						<br>
+						<p style="font-size: 20px; color: #676067;">The Heavenly Macarons® pastry shop macaron menu includes colorful confections, available in 20 flavors. Beyond our signature macarons, our luscious menu selection includes gourmet chocolates, creamy French gelato, specialty European style coffees, classic French pastries and homemade candies. You will want to come back often to experience our limited-time seasonal macaron flavors and fresh seasonal offerings.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="items-container">
+			<div class="items">
+				<button type="button" style="padding: 15px; background-color: #91195E; border-style: solid;border-color: #BC5791; border-radius: 18px; border-width: thick; color: white; font-size: 22px; text-align: center; margin: auto; display: grid; display: flex; justify-content: center; cursor: pointer;">Macaroon</button>
+				<div class="flex-container">
+					
+				<div class="pics">
+					<img src="cassis-jam.jpg" height="200px" width="250px">
+					<h3>Cassis Jam</h3>
+					<img src="bubblegum.jpg" height="200px" width="250px">
+					<h3>Bubble Gum</h3>
+					<img src="black-vanilla-madagascar.jpg" height="200px" width="250px">
+					<h3>Black Vanilla Madagascar</h3>
+					<img src="mangojam.jpg" height="200px" width="250px">
+					<h3>Mango Jam</h3>
+				</div>
+				<div class="pics">
+					<img src="rose.jpg" height="200px" width="220px">
+					<h3>Rose</h3>
+					<img src="basil-white-chocolate.jpg" height="200px" width="220px">
+					<h3>Basil White Chocolate</h3>
+					<img src="sicilian-pistachio.jpg" height="200px" width="220px">
+					<h3>Sicilian Pistachio</h3>
+					<img src="colombian-coffee.jpg" height="200px" width="220px">
+					<h3>Colombian Coffee</h3>
+				</div>
+				<div class="pics">
+					<img src="salted-caramel.jpg" height="200px" width="220px">
+					<h3>Salted Caramel</h3>
+					<img src="belgian-chocolate.jpg" height="200px" width="220px">
+					<h3>Belgium Chocolate</h3>
+					<img src="lemon-cream.jpg" height="200px" width="220px">
+					<h3>Lemon Cream</h3>
+					<img src="strawberry-keylime.jpg" height="200px" width="220px">
+					<h3>Strawberry Keylime</h3>
+				</div>
+				<div class="pics">
+					<img src="lavenderwhitechoco.jpg" height="200px" width="220px">
+					<h3>Lavender White</h3>
+					<img src="passion-fruit-dark-chocolate.jpg" height="200px" width="220px">
+					<h3>Dark Chocolate</h3>
+					<img src="mint-white-chocalate.jpg" height="200px" width="220px">
+					<h3>Mint White choco</h3>
+					<img src="coconut.jpg" height="200px" width="220px">
+					<h3>Coconut</h3>
+				</div>
+				<div class="pics">
+					<img src="chocolate-praline.jpg" height="200px" width="220px">
+					<h3>Praline</h3>
+					<img src="raspberry.jpg" height="200px" width="220px">
+					<h3>Raspberry</h3>
+					<img src="Red-Velvet.png" height="200px" width="220px">
+					<h3>Red Velvet</h3>
+					<img src="large-birthday-cake.png" height="200px" width="220px">
+					<h3>Birthday cake</h3>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+		<br><br><br><br>
+		
+		<div class="piediagram-container">
+			
+			<img src="vs.png" height="180px" width="100%">
+			<img src="webling.png" height="400px" width="100%">
+		</div>
+		<div class="contact-us">
+			<div class="box">
+				<h1 style="margin-bottom: 20px; color: maroon; font-size: 30px;">CONTACT US</h1>
+				<div class="form">
+					<form action="" method="GET">
+						<label for="name">Name</label>
+    				<input type="text" id="name" name="name" placeholder="Your name..">
+    				<label for="number">Number</label>
+    				<input type="text" id="number" name="number"
+    				placeholder="Your number..">
+    				<label for="email">Email</label>
+    				<input type="text" id="email" name="email" placeholder="Your email id..">
+    				<label for="Location">Location</label>
+    				<input type="text" name="location" id="location" placeholder="Your location..">
+    				<label for="message">Message</label>    			
+    				<textarea rows="4" cols="50" name="message" placeholder="Type your message here.."></textarea>
+    				<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="icons">
+				<p style="color: grey; text-align: center;"><i class="fa fa-copyright"></i>Copyright 2022 Le Macaron. ALL RIGHTS RESERVED. Digital Marketing by 9thRoot.</p>
+			<br>
+        	<i class="fa fa-facebook-square" style="font-size: 32px; padding: 12px"></i>
+        	<i class="fa fa-instagram" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-twitter" style="font-size:32px; padding: 12px"></i>
+        	<i class="fa fa-linkedin" style="font-size:32px; padding: 12px"></i>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
